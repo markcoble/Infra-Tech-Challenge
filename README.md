@@ -15,7 +15,7 @@ Here are the challenges:
 - Provide Infrastructure as Code (Ansible, puppet, chef, Cloudformation, Terraform, etc.) that would launch a VPC with the 2 subnets on a dummy AWS account, as well as the Jenkins and HTML web servers. 
 
     Make sure the above restrictions are applied to the private subnet.
-- Implement a solution to detect changes in Github IP list and update those ACLs and/or Security groups with the up-to-date AWS IPs. 
+- Implement a solution to detect changes in Github IP list and update those ACLs and/or Security groups with the up-to-date IPs. 
 
     This task should be automated in such a way that other members of your team could run it when needed. 
     
@@ -36,7 +36,7 @@ In case you cannot complete the challenge in time, tell us why and write a high-
 In case you think something is impossible, write a justification on why.
 
 # Bonus Questions 
-- If this task relies on an AWS IAM user or Role to be executed, could you list the additional permissions required by this IAM user or Role for the task to run successfully?
+- If auto update IPs task relies on an AWS IAM user or Role to be executed, could you list the additional permissions required by this IAM user or Role for the task to run successfully?
 - How would have this task run periodically?
 - If possible, how would you make this solution generic enough so that it (or part of it) could be re-used to perform audits over existing ACLs and/or Security groups?
 - How would you automate for creating such Jenkins web deployment job, instead of creating it manually in Jenkins web UI?
