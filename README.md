@@ -4,7 +4,7 @@ You're an employee working for a company that is migrating its core infrastructu
 
 On the public subnet, all instances are reachable from the outside. However, everything running on the private subnet has very restricted access:
 - Inbound and outbound traffic to the web server located on the public subnet and office IP is allowed.
-- Outbound traffic to Github IP endpoints  is allowed
+- Inbound traffic from Github IPs is allowed
 - All other traffic is rejected
 
 Right now the Github IP endpoints are hardcoded in the ACLs and/or security groups applied to the private subnet and its instances. Luckily for you, Github publishes the updated list of the IPs it uses at https://api.github.com/meta. You need to find a way to maintain those rules as Github IP endpoints may change over time.
